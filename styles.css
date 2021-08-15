@@ -1,0 +1,93 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+h2, span {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+img {
+    float: right;
+}
+
+/* ------header----- */
+header {
+    text-align: center;
+    width: 45%;
+    margin: 5% auto;
+}
+
+/* ------------classes------------ */
+.AI {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 0.5em;
+}
+.AI-tools {
+    background-color: white;
+    height: 240px;
+    border-radius: 2%;
+    padding: 0 5%;
+    box-shadow: 0px 10px 5px hsla(0, 0%, 0%, 0.1);
+}
+
+.middle {
+    display: grid;
+    gap: 0.5em;
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+.supervisor {
+    grid-column: 1;
+    grid-row: 2;
+    border-top: hsl(180, 62%, 55%) 6px solid;
+}
+
+.team-builder {
+    border-top: hsl(0, 78%, 62%) 6px solid;
+}
+
+.karma {
+    border-top: hsl(34, 97%, 64%) 6px solid;
+}
+
+.calculator {
+    grid-column: 3;
+    grid-row: 2;
+    border-top: hsl(34, 97%, 64%) 6px solid;
+}
+
+/* ------------Smaller screens------------ */
+@media (max-width: 870px) {
+    .AI {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    .AI-tools {
+        margin-top: 5%;
+    }
+    header {
+        width: 320px;
+        margin: 20% auto;
+    }
+}
